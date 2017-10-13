@@ -10,7 +10,7 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  */
 public class KillerRake extends Subsystem {
 	
-	public double rakeSpeed = 1;
+	public double rakeSpeed = 2;
 	
 	public VictorSP rakeMotorUD;
 	
