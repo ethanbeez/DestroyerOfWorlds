@@ -5,6 +5,7 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 import org.usfirst.frc.team997.robot.commands.ExampleCommand;
+import org.usfirst.frc.team997.robot.commands.MoveUp;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -21,7 +22,7 @@ public class OI {
 		buttonLeft = new JoystickButton (stick, 3);
 		buttonRight = new JoystickButton (stick, 4);
 		
-		buttonUp.whenPressed(command);
+		buttonUp.whenPressed(new MoveUp());
 
 				
 		

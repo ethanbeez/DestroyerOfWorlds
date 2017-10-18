@@ -1,17 +1,13 @@
 package org.usfirst.frc.team997.robot.commands;
 
-import org.usfirst.frc.team997.robot.Robot;
-
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
  */
-public class MoveUp extends Command {
+public class MoveDown extends Command {
 
-    public MoveUp() {
-    	requires(Robot.killerRake);
-    	
+    public MoveDown() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -22,19 +18,15 @@ public class MoveUp extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	
-    	Robot.killerRake.rakeVoltage(1, 0);
-    	
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return true;
+        return false;
     }
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.killerRake.rakeVoltage(0, 0);
     }
 
     // Called when another command which requires one or more of the same

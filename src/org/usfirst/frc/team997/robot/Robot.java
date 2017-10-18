@@ -10,6 +10,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team997.robot.commands.ExampleCommand;
+import org.usfirst.frc.team997.robot.commands.MoveUp;
 import org.usfirst.frc.team997.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team997.robot.subsystems.KillerRake;
 
@@ -39,8 +40,8 @@ public class Robot extends IterativeRobot {
 	public void robotInit() {
 		oi = new OI();
 			
-		}
 		chooser.addDefault("Default Auto", new ExampleCommand());
+		chooser.addObject("MoveUp", new MoveUp());
 		// chooser.addObject("My Auto", new MyAutoCommand());
 		SmartDashboard.putData("Auto mode", chooser);
 	}
