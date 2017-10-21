@@ -10,7 +10,8 @@ public class RobotMap {
 	
 	public static class Ports{
 		public static final int
-		rakeMotorUDPort = 0, rakeMotorLRPort = 1;
+		rakeMotorUDPort = 0, rakeMotorLRPort = 1, driveTrainMotorLeft = 2, driveTrainMotorRight = 3;
+		
 		
 }
 	

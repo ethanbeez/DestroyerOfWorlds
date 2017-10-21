@@ -8,30 +8,24 @@ import edu.wpi.first.wpilibj.command.Subsystem;
 /**
  *
  */
-public class KillerRake extends Subsystem {
+public class DriveTrain extends Subsystem {
 	
-	public double rakeSpeed = 2;
+	public VictorSP leftMotor;
+	public VictorSP rightMotor;
 	
-	public VictorSP rakeMotorUD;
+	public DriveTrain() {
 	
-	public VictorSP rakeMotorLR;
-
-public KillerRake() {
+		leftMotor = new VictorSP(RobotMap.Ports.driveTrainMotorLeft);
+		rightMotor = new VictorSP(RobotMap.Ports.driveTrainMotorRight);
+		
+	}
 	
-	rakeMotorUD = new VictorSP(RobotMap.Ports.rakeMotorUDPort);
-	rakeMotorLR = new VictorSP(RobotMap.Ports.rakeMotorLRPort);
-	
-}
-public void rakeVoltage(double UDV, double LRV) {
-	
-	rakeMotorUD.set(UDV*rakeSpeed);
-	rakeMotorLR.set(LRV*rakeSpeed);
-	
-	
-}
-
-
-
+	public void driveVoltage (double leftVoltage, double rightVoltage) {
+		
+		leftMotor.set(leftVoltage);
+		rightMotor.set(rightVoltage);
+		
+	}
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 

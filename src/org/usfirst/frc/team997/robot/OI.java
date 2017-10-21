@@ -5,6 +5,9 @@ import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
 
 import org.usfirst.frc.team997.robot.commands.ExampleCommand;
+import org.usfirst.frc.team997.robot.commands.MoveDown;
+import org.usfirst.frc.team997.robot.commands.MoveLeft;
+import org.usfirst.frc.team997.robot.commands.MoveRight;
 import org.usfirst.frc.team997.robot.commands.MoveUp;
 
 /**
@@ -23,6 +26,15 @@ public class OI {
 		buttonRight = new JoystickButton (stick, 4);
 		
 		buttonUp.whenPressed(new MoveUp());
+		buttonDown.whenPressed(new MoveDown());
+		buttonLeft.whenPressed(new MoveLeft());
+		buttonRight.whenPressed(new MoveRight());
+		
+		
+		
+	}
+	
+}
 
 				
 		
@@ -56,4 +68,3 @@ public class OI {
 	// Start the command when the button is released and let it run the command
 	// until it is finished as determined by it's isFinished method.
 	// button.whenReleased(new ExampleCommand());
-}
