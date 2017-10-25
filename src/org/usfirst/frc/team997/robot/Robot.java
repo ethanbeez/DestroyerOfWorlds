@@ -11,6 +11,7 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc.team997.robot.commands.ExampleCommand;
 import org.usfirst.frc.team997.robot.commands.MoveUp;
+import org.usfirst.frc.team997.robot.subsystems.DriveTrain;
 import org.usfirst.frc.team997.robot.subsystems.ExampleSubsystem;
 import org.usfirst.frc.team997.robot.subsystems.KillerRake;
 
@@ -24,8 +25,9 @@ import org.usfirst.frc.team997.robot.subsystems.KillerRake;
 public class Robot extends IterativeRobot {
 	
 	public static final KillerRake killerRake = new KillerRake();
+	public static final DriveTrain driveTrain = new DriveTrain();
 	
-
+	
 	public static final ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
 	public static OI oi;
 

@@ -34,12 +34,36 @@ public class OI {
 		
 	}
 	
-}
+
 
 				
 		
 		
 
+	public double getLeftY() {
+		return stick.getRawAxis(2);
+		
+	}
+	
+	public double getLeftX() {
+		return stick.getRawAxis(1);
+		
+	}
+	
+	public double getRightY() {
+		return stick.getRawAxis(4);
+		
+	}
+	
+	public double getRightX() {
+		return stick.getRawAxis(6);
+		
+	}
+	
+	
+	
+	
+		
 	
 	//// CREATING BUTTONS
 	// One type of button is a joystick button which is any button on a
@@ -68,3 +92,4 @@ public class OI {
 	// Start the command when the button is released and let it run the command
 	// until it is finished as determined by it's isFinished method.
 	// button.whenReleased(new ExampleCommand());
+	}
