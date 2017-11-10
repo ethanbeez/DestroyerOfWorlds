@@ -23,6 +23,7 @@ public class MoveDown extends Command {
     protected void execute() {
     	
     	Robot.killerRake.rakeVoltage(-1, 0);
+    	// Setting the voltages for our motors given we want it to move down.
     	
     }
 

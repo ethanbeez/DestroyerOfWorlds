@@ -10,11 +10,17 @@ public class RobotMap {
 	
 	public static class Ports{
 		public static final int
-		rakeMotorUDPort = 0, rakeMotorLRPort = 1, driveTrainMotorLeft = 2, driveTrainMotorRight = 3;
-		
+		rakeMotorUDPort = 0, rakeMotorLRPort = 1, driveTrainMotorLeft = 2, driveTrainMotorRight = 3, leftEncoderOne = 4, leftEncoderTwo = 5, rightEncoderOne = 6, rightEncoderTwo = 7; 
+		// Making ports for our motors and encoders
 		
 }
+
+public static class Values {
 	
+	public static final double
+	driveP = 0, driveI = 0, driveD = 0;
+	
+}
 	
 	// For example to map the left and right motors, you could define the
 	// following variables to use with your drivetrain subsystem.

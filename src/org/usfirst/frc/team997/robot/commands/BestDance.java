@@ -9,11 +9,15 @@ public class BestDance extends CommandGroup {
 
     public BestDance() {
     	
+    	// Dancing is fun. :^)
+    	
+    	addSequential(new DriveDistance(60));
     	addSequential(new MoveUp());
     	addSequential(new MoveLeft());
     	addSequential(new MoveRight());
     	addSequential(new MoveLeft());
     	addSequential(new MoveRight());
+    	// rake me up inside
     	
     	// Add Commands here:
         // e.g. addSequential(new Command1());

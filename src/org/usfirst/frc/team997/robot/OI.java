@@ -25,12 +25,14 @@ public class OI {
 		buttonLeft = new JoystickButton (stick, 3);
 		buttonRight = new JoystickButton (stick, 4);
 		
+		// Making the buttons on our joystick!
+		
 		buttonUp.whenPressed(new MoveUp());
 		buttonDown.whenPressed(new MoveDown());
 		buttonLeft.whenPressed(new MoveLeft());
 		buttonRight.whenPressed(new MoveRight());
 		
-		
+		// Setting what commands they run when pressed!
 		
 	}
 	

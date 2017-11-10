@@ -26,6 +26,7 @@ public class TankDrive extends Command {
     protected void execute() {
     	
     	Robot.driveTrain.driveVoltage(Robot.oi.getLeftY(), Robot.oi.getRightY());
+    	// Getting the values on our controller to determine the voltage applied to the motors.
     	
     }
 
@@ -38,6 +39,7 @@ public class TankDrive extends Command {
     protected void end() {
     	
     	Robot.driveTrain.driveVoltage(0, 0);
+    	// Setting the voltage to zero when it's done so it doesn't speed around mindlessly.
     	
     }
 
